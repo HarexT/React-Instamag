@@ -1,0 +1,186 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.slider_title{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.NavbarItems{
+  opacity: 0.8;
+  z-index: 4;
+  background-color: rgb(231, 231, 231);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40vw;
+  justify-content: end;
+}
+
+.nav-links{
+  color: black;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.nav-links:hover{
+  background-color: rgb(68, 68, 68);
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card-wrapper{
+  position: relative;
+  width:100%;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  padding:0 10px;
+  box-sizing: border-box;
+  
+  &:active,&:hover,&:focus{
+    outline: none;
+    border: none;
+  }
+}
+
+.card{
+  width: 95%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor:pointer;
+  position: relative;
+  
+  
+}
+.card-image{
+    position: absolute;
+    background-color: #F6EBFF;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    top:0;
+    left:0;
+    transition: .5s;
+    
+  }
+.image-fond{
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    object-fit: cover;
+  }
+.card:hover{
+  img{
+      opacity: 0.4;
+      transition: .5s;
+    }
+    .card-image{
+      transform: translateY(-100px);
+      transition: all .9s;
+    }
+}
+
+li{
+  list-style: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+.card:hover{
+  .ico{
+    opacity: 0;
+  }
+}
+
+.details{
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0px;
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+}
+
+.details h2{
+  font-size: 45px;
+  text-align: center;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #141456;
+  height: 60px;
+}
+
+.social-icons{
+  position: absolute;
+  left:50%;
+  right: 50%; 
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ico{
+  width: 25px;
+  opacity: 1;
+}
+
+.contener{
+  padding-top: 20px;
+}
+
+.apropos-contener
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    width: 100%;
+    height: 600px;
+}
+.apropos-child
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    
+}
+.img-profil
+{
+    width: 30%;
+    border-radius: 40px;
+}
+
+span{
+  font-size: 20px;
+}
